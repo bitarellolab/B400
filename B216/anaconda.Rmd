@@ -6,7 +6,7 @@ output:
 ---
 
 
-## 1. Check your python version.
+### 1. Check your python version.
 
 In the command line, type:
 
@@ -52,7 +52,7 @@ Python 3.10.0
 
 Hopefully this now returns a python version >=3!
 
-## INSTALLING PYTHON 3
+### INSTALLING PYTHON 3
 If you have no python3 installed, let's install it.
 **ONLY RUN THIS IF YOU DON"T HAVE PYTHON3 INSTALLED**
 
@@ -126,4 +126,4 @@ conda activate b216
 conda deactivate
 ```
 
-## The end!
+### The end!

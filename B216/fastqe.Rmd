@@ -8,7 +8,7 @@ output:
 This tutorial guides you through installing FASTE and FASTQ.
 
 
-## 1. Install FASTQE
+### 1. Install FASTQE
 
 Activate your b216 conda environment:
 
@@ -34,14 +34,14 @@ Processing FASTQ file from stdin, press Ctrl-C to cancel. fastqe --help for more
 
 IF you see that, it's a good sign! You can always cancel something that's running by pressing control+c
 
-## 2. Install FASTP
+### 2. Install FASTP
 
 ```{bash, eval=F}
 conda install -c bioconda fastp
 ```
 
 
-## 3. Download input files for fastqe
+### 3. Download input files for fastqe
 
 Manually download the file fastq.zip from our [Moodle page](https://moodle.brynmawr.edu/pluginfile.php/211780/mod_folder/content/0/fastq.zip):
 
@@ -67,4 +67,4 @@ Unzip the file
 unzip fastq.zip
 ```
 
-## The end!
+### The end!
