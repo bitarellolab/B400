@@ -130,7 +130,6 @@ cd ../ # this command means "go back to the directory above this one in the hier
 
 https://swcarpentry.github.io/shell-novice/01-intro/index.html
 
-
-## The end!
+### The end!
 
 
