@@ -176,8 +176,8 @@ pre code {
 <p>This will be a very soft introduction to the command-line.</p>
 <p>I am assuming you are using either a Mac or a Linux machine.</p>
 </div>
-<div id="what-is-the-shell" class="section level1">
-<h1>1. What is “the shell”?</h1>
+<div id="what-the-hell-is-the-shell" class="section level1">
+<h1>1. What the hell is “the shell”?</h1>
 <p>Read this <a href="https://swcarpentry.github.io/shell-novice/01-intro/index.html">5 min tutorial</a> and then come back here!</p>
 <p>Now you know what it is! It is a computer program that allows you to “talk” to your computer and give it tasks. But you need to speak its language!</p>
 </div>
@@ -203,7 +203,31 @@ pre code {
 <p>Q2. What do you think the above command does?</p>
 <p>Check your guess by using the pwd command again to check where you are:</p>
 <pre class="bash"><code>pwd</code></pre>
-<pre><code>## /Users/bbitarello/Dropbox/Mac (2)/Documents/GitHub/Teaching_BMC/B216</code></pre>
+<p>notice that “cd ~/Desktop” is equivalent to “cd /Users/your_username/Desktop” if on a Mac (or “home/your_username”/Desktop if on Linux). Try it!</p>
+<pre class="bash"><code>#type your command in your terminal </code></pre>
+<p>And then check what directory you’re currently in with the path to working directory command:</p>
+<pre class="bash"><code>pwd</code></pre>
+<p>Knowing that your downloads folder (on a Mac) has the following path: /Users/your username/Downloads</p>
+<p>Type a command that will take you there without having to type the entire path above</p>
+<pre class="bash"><code>#type your command in your terminal </code></pre>
+<p>Now check where you are by using the “pwd” command:</p>
+<pre class="bash"><code>#type your command in your terminal </code></pre>
+<p>Great! Now let’s go back to the Desktop folder:</p>
+<pre class="bash"><code>#type your command in your terminal </code></pre>
+<p>Now, we are going to create a subdirectory(a subfolder) within your desktop. Let’s call it “B216”. The command to create that is “make directory”, which is executed by typing:</p>
+<pre class="bash"><code>mkdir B216</code></pre>
+<p>Next, we are going to move into that directory. Remember, you are already in the Desktop directory, and the B216 directory lives inside it, so all you have to do is use the “cd” command followed by the name of the subdirectory. Try it!</p>
+<pre class="bash"><code>#type your command in your terminal </code></pre>
+<p>Great! Now, let’s list the files inside this directory. Use the “list” commands, which ix executed by typing “ls”:</p>
+<pre class="bash"><code>#type your command in your terminal </code></pre>
+<p>You shouldn’t see anything in there, because you just created this - it’s brand new! But to check that this works, list the files that are currently in your “Downloads” folder. (if you’re anything like your professor, there will be about 2,000 files in there). You will do this by typing “ls” followed by the path to your Downloads folder:</p>
+<pre class="bash"><code>#type your command in your terminal </code></pre>
+<p>Finally, let’s go back to your Desktop folder. There are three ways to do this. Two you already know (type the path or the shortcut path we saw above). The third one involves using “..”.</p>
+<p>Your directories have an internal structure. “Desktop” is a subdirectory of “Users/” and “B216” is a subdirectory of “Desktop”. Whenever you are in a subdirectory, you can go back to the one “above” it by simply typing “../”.</p>
+<p>Try the three different commands, followed by “pwd” to check that they will all get you to where you want to go:</p>
+<pre class="bash"><code>#type your command in your terminal and write it down here
+cd ../ # this command means &quot;go back to the directory above this one in the hierarchy
+#check where you are by typing pwd:</code></pre>
 <div id="references" class="section level2">
 <h2>References</h2>
 <p><a href="https://swcarpentry.github.io/shell-novice/01-intro/index.html" class="uri">https://swcarpentry.github.io/shell-novice/01-intro/index.html</a></p>

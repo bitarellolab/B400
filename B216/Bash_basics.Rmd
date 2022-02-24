@@ -5,9 +5,6 @@ output:
     df_print: paged
 ---
 
-# Command-line basics!
-
-
 Hi everyone! 
 
 This will be a very soft introduction to the command-line.
@@ -15,7 +12,7 @@ This will be a very soft introduction to the command-line.
 I am assuming you are using either a Mac or a Linux machine.
 
 
-# 1. What is "the shell"?
+# 1. What the hell is "the shell"?
 
 Read this [5 min tutorial](https://swcarpentry.github.io/shell-novice/01-intro/index.html) and then come back here!
 
@@ -43,7 +40,7 @@ Q1. What does this show you?
 
 Move to your desktop folder by using the "change directory command". Type:
 
-```{bash}
+```{bash, eval=F}
 cd ~/Desktop #the "~" is a shortcut that means "home directory".
 #everything written after "#" is ignored by the shell, which is why we write comments after "#" when writing code.
 ```
@@ -52,16 +49,81 @@ Q2. What do you think the above command does?
 
 Check your guess by using the pwd command again to check where you are:
 
-```{bash}
+```{bash, eval=F}
 pwd
 ```
 
 
+notice that “cd ~/Desktop” is equivalent to “cd /Users/your_username/Desktop” if on a Mac (or “home/your_username”/Desktop if on Linux). Try it!
 
 
+```{bash}
+#type your command in your terminal 
+```
+
+And then check what directory you're currently in with the path to working directory command:
+```{bash, eval=F}
+pwd
+```
 
 
+Knowing that your downloads folder (on a Mac) has the following path: /Users/your username/Downloads
 
+Type a command that will take you there without having to type the entire path above
+
+
+```{bash}
+#type your command in your terminal 
+```
+
+Now check where you are by using the “pwd” command:
+```{bash}
+#type your command in your terminal 
+```
+
+
+Great! Now let’s go back to the Desktop folder:
+```{bash}
+#type your command in your terminal 
+```
+
+
+Now, we are going to create a subdirectory(a subfolder) within your desktop. Let’s call it “B216”. The command to create that is “make directory”, which is executed by typing:
+
+```{bash, eval=F}
+mkdir B216
+```
+
+
+Next, we are going to move into that directory. Remember, you are already in the Desktop directory, and the B216 directory lives inside it, so all you have to do is use the “cd” command followed by the name of the subdirectory. Try it!
+```{bash}
+#type your command in your terminal 
+```
+
+Great! Now, let’s list the files inside this directory. Use the “list” commands, which ix executed by typing “ls”:
+
+```{bash}
+#type your command in your terminal 
+```
+
+You shouldn’t see anything in there, because you just created this - it’s brand new! But to check that this works, list the files that are currently in your “Downloads” folder. (if you’re anything like your professor, there will be about 2,000 files in there). You will do this by typing “ls” followed by the path to your Downloads folder:
+
+```{bash}
+#type your command in your terminal 
+```
+
+
+Finally, let’s go back to your Desktop folder. There are three ways to do this. Two you already know (type the path or the shortcut path we saw above). The third one involves using “..”.
+
+Your directories have an internal structure. “Desktop” is a subdirectory of “Users/” and “B216” is a subdirectory of “Desktop”. Whenever you are in a subdirectory, you can go back to the one “above” it by simply typing “../”.
+
+Try the three different commands, followed by “pwd” to check that they will all get you to where you want to go:
+
+```{bash}
+#type your command in your terminal and write it down here
+cd ../ # this command means "go back to the directory above this one in the hierarchy
+#check where you are by typing pwd:
+```
 
 
 ## References
