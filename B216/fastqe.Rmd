@@ -1,5 +1,5 @@
 ---
-title: "FASTQE, FASTP"
+title: "Installing FASTQE"
 output:
   html_document:
     df_print: paged
