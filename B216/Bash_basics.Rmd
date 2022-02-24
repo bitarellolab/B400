@@ -12,14 +12,14 @@ This will be a very soft introduction to the command-line.
 I am assuming you are using either a Mac or a Linux machine.
 
 
-# 1. What the hell is "the shell"?
+### 1. What the hell is "the shell"?
 
 Read this [5 min tutorial](https://swcarpentry.github.io/shell-novice/01-intro/index.html) and then come back here!
 
 
 Now you know what it is! It is a computer program that allows you to "talk" to your computer and give it tasks. But you need to speak its language!
 
-# 2. Why should I use one?
+### 2. Why should I use one?
 
 It may not seem worth your while to run a program ONCE using the command-line, but when you find yourself contemplating manually repeating a computational task 100 times, the appeal becomes clear!
 
@@ -27,7 +27,7 @@ It may not seem worth your while to run a program ONCE using the command-line, b
 * support for automating repetitive tasks
 * capacity to access networked machines.
 
-# 3. Getting started!
+### 3. Getting started!
 
 In your personal or lab computer, go to the "Terminal" application. Tip: if you don't know where to find it, open Finder and search for it. 
 
@@ -126,11 +126,11 @@ cd ../ # this command means "go back to the directory above this one in the hier
 ```
 
 
-## References
+### References
 
 https://swcarpentry.github.io/shell-novice/01-intro/index.html
 
 
-# The end!
+## The end!
 
 
