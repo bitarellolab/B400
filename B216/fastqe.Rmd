@@ -1,0 +1,59 @@
+---
+title: "FASTQE"
+output:
+  html_document:
+    df_print: paged
+---
+
+
+# 1. Install FASTQE
+
+Activate your b216 conda environment:
+
+```{bash}
+conda activate b216
+```
+
+Install [fastqe](https://fastqe.com/):
+```{bash}
+pip install fastqe #pip is a package index for python. The bona-fide way to install python packages. 
+```
+
+If there were no error messages, test that it worked:
+
+```{bash}
+fastqe
+```
+
+```{bash}
+Filename        Statistic       Qualities
+Processing FASTQ file from stdin, press Ctrl-C to cancel. fastqe --help for more info
+```
+
+IF you see that, it's a good sign! You can always cancel something that's running by pressing control+c
+
+# 2. Downloading the input files
+
+Download the file fastq.zip from our [Moodle page](https://moodle.brynmawr.edu/pluginfile.php/211780/mod_folder/content/0/fastq.zip):
+
+
+Copy the file from your downloads folder into the current directory
+```{bash}
+
+cp ~/Downloads/fastq.zip . # "." means "this directory"
+`
+#check
+
+ls
+```
+
+Check that the file is in your directory
+```{bash}
+ls -l #this flag makes the file be listed in a list-like way
+```
+
+Unzip the file
+
+```{bash}
+unzip fastq.zip
+```

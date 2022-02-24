@@ -1,6 +1,8 @@
 ---
 title: "Installing Anaconda and making a python 3 environment"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 
@@ -18,14 +20,14 @@ a. If you got a version >=3, head over to step 1.
 
 b. If you got a version < 3, run this:
 
-```{bash}
+```{bash, eval=F}
 python3 --version
 #
 ```
 
 b.1. If you get some kind of result telling you which python3 version you have, good! Type this:
 
-```{bash}
+```{bash, echo=T, eval=F}
 open ~/.zshrc
 ```
 b.2. A file will open. Paste the following into the first line of that file:
@@ -40,9 +42,14 @@ source ~/.zshrc
 ```
 
 b.4 And finally:
-```{bash}
+```{bash, eval=F}
 python --version
 ```
+
+```{bash, eval=F}
+Python 3.10.0
+```
+
 Hopefully this now returns a python version >=3!
 
 # INSTALLING PYTHON 3
@@ -54,7 +61,7 @@ If you have no python3 installed, let's install it.
 *Python 3.8.x requires about 100mb of disk space to install. Installation is quick, and you’ll have Python 3.x alongside Python 2.x on the Mac.
 *Once the installation concludes, go to your terminal and type:
 ```{bash}
-python3
+python3 -V
 ```
 *Whether you install the updated Python 3 with the package installer or Homebrew, the default version of Python 2.7 that comes preinstalled with Mac OS and Mac OS X will still be installed, completely untouched, and can be run with the simple “python” command as always.
 *If you want to avoid having to type python3 everytime, follow isntructions b.1-b4 above and then head over to #1!
@@ -62,7 +69,7 @@ python3
 
 # 1. What is Anaconda?
 
-
+Anaconda.org is a package management service by Anaconda. Anaconda.org makes it easy to find, access, store and share public notebooks, environments, and conda and PyPI packages. Anaconda.org also makes it easy to stay current with updates made to the packages and environments you are using. Anaconda.org hosts hundreds of useful Python packages, notebooks, projects and environments for a wide variety of applications. You do not need to log in, or even to have a Anaconda.org account, to search for public packages, download and install them.
 
 # 2. How do I install it?
 
@@ -74,4 +81,48 @@ You can follow the wonderful instructions from data camp [here](https://www.data
 *You should get a screen saying the installation has completed. Close the installer and move it to the trash.
 
 # 3. Test your installation
+
+Go back to the terminal and type
+
+```{bash, eval=F}
+conda -V
+```
+ If you get an error, close and reopen the terminal and try again. 
+
+
+Update conda just in case:
+
+```{bash, eval=F}
+conda update conda
+```
+
+If a newer version of conda is available, type y to update:
+
+```{bash, eval=F}
+Proceed ([y]/n)? y
+```
+
+# 2. Create and manage a conda environment
+
+Conda allows you to create separate environments containing files, packages, and their dependencies that will not interact with other environments.
+
+When you begin using conda, you already have a default environment named base. You don't want to put programs into your base environment, though. Create separate environments to keep your programs isolated from each other.
+
+First, go to the directory you want to work on:
+
+```{bash, echo=T, eval=F}
+cd ~/Documents/GitHub/Teaching_BMC/B216
+#create environment
+conda create --name b216 biopython
+#this command creates environment b216 and installs the package biopython
+```
+
+Next, you are going to activate that environment. This keeps things organized. If you end up having other projects that need different package versions, or even python versions, it will be doable. 
+
+```{bash}
+conda activate b216
+#this activate the conda environment b216
+#don't forget to deactivate it and create a new one for any new major projects!
+conda deactivate
+```
 
