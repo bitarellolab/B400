@@ -34,7 +34,7 @@ IF you see that, it's a good sign! You can always cancel something that's runnin
 
 # 2. Downloading the input files
 
-Download the file fastq.zip from our [Moodle page](https://moodle.brynmawr.edu/pluginfile.php/211780/mod_folder/content/0/fastq.zip):
+Manually download the file fastq.zip from our [Moodle page](https://moodle.brynmawr.edu/pluginfile.php/211780/mod_folder/content/0/fastq.zip):
 
 
 Copy the file from your downloads folder into the current directory
