@@ -6,6 +6,8 @@ output:
 ---
 
 This tutorial guides you through installing FASTE and FASTQ.
+
+
 ## 1. Install FASTQE
 
 Activate your b216 conda environment:
@@ -65,4 +67,4 @@ Unzip the file
 unzip fastq.zip
 ```
 
-
+## The end!
