@@ -1,9 +1,3 @@
----
-title: "Teaching @ BMC"
-output:
-  html_document:
-    df_print: paged
----
 
 
 
