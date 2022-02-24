@@ -1,12 +1,12 @@
 ---
-title: "FASTQE"
+title: "FASTQE, FASTP"
 output:
   html_document:
     df_print: paged
 ---
 
-
-# 1. Install FASTQE
+This tutorial guides you through installing FASTE and FASTQ.
+## 1. Install FASTQE
 
 Activate your b216 conda environment:
 
@@ -16,7 +16,7 @@ conda activate b216
 
 Install [fastqe](https://fastqe.com/):
 ```{bash, eval=F}
-pip install fastqe #pip is a package index for python. The bona-fide way to install python packages. 
+conda install -c bioconda/label/cf201901 fastp #
 ```
 
 If there were no error messages, test that it worked:
@@ -32,7 +32,14 @@ Processing FASTQ file from stdin, press Ctrl-C to cancel. fastqe --help for more
 
 IF you see that, it's a good sign! You can always cancel something that's running by pressing control+c
 
-# 2. Downloading the input files
+## 2. Install FASTP
+
+```{bash, eval=F}
+conda install -c bioconda fastp
+```
+
+
+## 3. Download input files for fastqe
 
 Manually download the file fastq.zip from our [Moodle page](https://moodle.brynmawr.edu/pluginfile.php/211780/mod_folder/content/0/fastq.zip):
 
@@ -57,3 +64,5 @@ Unzip the file
 ```{bash,eval=F}
 unzip fastq.zip
 ```
+
+

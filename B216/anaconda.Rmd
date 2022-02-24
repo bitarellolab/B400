@@ -6,7 +6,7 @@ output:
 ---
 
 
-# 0 check your python version.
+## 1. Check your python version.
 
 In the command line, type:
 
@@ -52,7 +52,7 @@ Python 3.10.0
 
 Hopefully this now returns a python version >=3!
 
-# INSTALLING PYTHON 3
+## INSTALLING PYTHON 3
 If you have no python3 installed, let's install it.
 **ONLY RUN THIS IF YOU DON"T HAVE PYTHON3 INSTALLED**
 
@@ -67,11 +67,11 @@ python3 -V
 *If you want to avoid having to type python3 everytime, follow isntructions b.1-b4 above and then head over to #1!
 
 
-# 1. What is Anaconda?
+### 1. What is Anaconda?
 
 Anaconda.org is a package management service by Anaconda. Anaconda.org makes it easy to find, access, store and share public notebooks, environments, and conda and PyPI packages. Anaconda.org also makes it easy to stay current with updates made to the packages and environments you are using. Anaconda.org hosts hundreds of useful Python packages, notebooks, projects and environments for a wide variety of applications. You do not need to log in, or even to have a Anaconda.org account, to search for public packages, download and install them.
 
-# 2. How do I install it?
+### 2. How do I install it?
 
 You can follow the wonderful instructions from data camp [here](https://www.datacamp.com/community/tutorials/installing-anaconda-mac-os-x) or simply follow the shorter version below:
 
@@ -80,7 +80,7 @@ You can follow the wonderful instructions from data camp [here](https://www.data
 *Note that when you install Anaconda, it modifies your bash profile with anaconda3.This can important for later. Click on Continue.
 *You should get a screen saying the installation has completed. Close the installer and move it to the trash.
 
-# 3. Test your installation
+### 3. Test your installation
 
 Go back to the terminal and type
 
@@ -102,7 +102,7 @@ If a newer version of conda is available, type y to update:
 Proceed ([y]/n)? y
 ```
 
-# 2. Create and manage a conda environment
+### 4. Create and manage a conda environment
 
 Conda allows you to create separate environments containing files, packages, and their dependencies that will not interact with other environments.
 
@@ -119,10 +119,11 @@ conda create --name b216 biopython
 
 Next, you are going to activate that environment. This keeps things organized. If you end up having other projects that need different package versions, or even python versions, it will be doable. 
 
-```{bash}
+```{bash, eval=F}
 conda activate b216
 #this activate the conda environment b216
 #don't forget to deactivate it and create a new one for any new major projects!
 conda deactivate
 ```
 
+## The end!
