@@ -5,7 +5,8 @@ output:
     df_print: paged
 ---
 
-
+* You can use your own terminal on a Mac or Linux machine OR
+* Go to our cyverse environment. If so, I will post details below.ige
 ### 1. Check your python version.
 
 In the command line, type:
