@@ -9,13 +9,13 @@ output:
 
 * Go to [this page](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/18a9793b58ba86660b5ab964e1aeaf7324d667c8?urlpath=lab%2Ftree%2Fdemo%2FLorenz.ipynb) and access Jupyter Lab directly on your browser.If this seems to have worked, great! Select "terminal". This will open a bash terminal.
 
-### Table of Contents
+## Table of Contents
 
-* I want to use my own temrinal (linux or mac). Head over to [option 1](##1-Check-your-python-version)
-* I want to use an online terminal (windows). [Head over to option 2](##2-Online-terminal)
+* I want to use my own temrinal (linux or mac). Head over to [option 1](#1.-check-your-python-version)
+* I want to use an online terminal (windows). [Head over to option 2](#2.-online-terminal)
 
 
-### 1) Check your python version
+##1. Check your python version
 
 In the command line, type:
 
@@ -141,6 +141,6 @@ conda deactivate
 
 * If this seems to have worked, great! Select "terminal". This will open a bash terminal.
 
-* Head over to the [beginning of this tutorial](##1.-check-your-python-version.) and follow all of the steps.
+* Head over to the [beginning of this tutorial](#1.-check-your-python-version.) and follow all of the steps.
 
 ### The end!
