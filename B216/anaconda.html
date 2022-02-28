@@ -170,14 +170,25 @@ pre code {
 </div>
 
 
-<div id="check-your-python-version." class="section level3">
-<h3>1. Check your python version.</h3>
+<ul>
+<li><p>You can use your own terminal on a Mac or Linux machine OR</p></li>
+<li><p>Go to <a href="https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/18a9793b58ba86660b5ab964e1aeaf7324d667c8?urlpath=lab%2Ftree%2Fdemo%2FLorenz.ipynb">this page</a> and access Jupyter Lab directly on your browser.If this seems to have worked, great! Select “terminal”. This will open a bash terminal.</p></li>
+</ul>
+<div id="table-of-contents" class="section level3">
+<h3>Table of Contents</h3>
+<ul>
+<li>I want to use my own temrinal (linux or mac). Head over to <a href="##1">option 1</a>-Check-your-python-version)</li>
+<li>I want to use an online terminal (windows). <a href="##2">Head over to option 2</a>-Online-terminal)</li>
+</ul>
+</div>
+<div id="check-your-python-version" class="section level3">
+<h3>1) Check your python version</h3>
 <p>In the command line, type:</p>
 <pre class="bash"><code>python --version
 #or
 python -V</code></pre>
-<pre><code>## Python 2.7.16
-## Python 2.7.16</code></pre>
+<pre><code>## Python 3.8.10
+## Python 3.8.10</code></pre>
 <ol style="list-style-type: lower-alpha">
 <li><p>If you got a version &gt;=3, head over to step 1.</p></li>
 <li><p>If you got a version &lt; 3, run this:</p></li>
@@ -185,24 +196,24 @@ python -V</code></pre>
 <pre class="bash"><code>python3 --version
 #</code></pre>
 <p>b.1. If you get some kind of result telling you which python3 version you have, good! Type this:</p>
-<pre class="bash"><code>open ~/.zshrc</code></pre>
+<pre class="bash"><code>open ~/.zshrc  #you can skip this if you are using a web-based command line</code></pre>
 <p>b.2. A file will open. Paste the following into the first line of that file:</p>
-<pre class="bash"><code>alias python=/usr/local/bin/python3</code></pre>
+<pre class="bash"><code>alias python=/usr/local/bin/python3 ##you can skip this if you are using a web-based command line</code></pre>
 <p>b.3. Save the file and close it. Then type:</p>
-<pre class="bash"><code>source ~/.zshrc</code></pre>
+<pre class="bash"><code>source ~/.zshrc #you can skip this if you are using a web-based command line</code></pre>
 <p>b.4 And finally:</p>
-<pre class="bash"><code>python --version</code></pre>
+<pre class="bash"><code>python --version </code></pre>
 <pre class="bash"><code>Python 3.10.0</code></pre>
 <p>Hopefully this now returns a python version &gt;=3!</p>
 </div>
 <div id="installing-python-3" class="section level3">
 <h3>INSTALLING PYTHON 3</h3>
-<p>If you have no python3 installed, let’s install it. <strong>ONLY RUN THIS IF YOU DON&quot;T HAVE PYTHON3 INSTALLED</strong></p>
+<p>If you have no python3 installed, let’s install it. <strong>ONLY RUN THIS IF YOU DON”T HAVE PYTHON3 INSTALLED</strong></p>
 <ul>
 <li>Go to the Python.org downloads page here and download the latest python installer package. <em>Run the Python installer package and install Python 3 onto the Mac </em>Python 3.8.x requires about 100mb of disk space to install. Installation is quick, and you’ll have Python 3.x alongside Python 2.x on the Mac. *Once the installation concludes, go to your terminal and type:</li>
 </ul>
 <pre class="bash"><code>python3 -V</code></pre>
-<pre><code>## Python 3.8.2</code></pre>
+<pre><code>## Python 3.8.10</code></pre>
 <p><em>Whether you install the updated Python 3 with the package installer or Homebrew, the default version of Python 2.7 that comes preinstalled with Mac OS and Mac OS X will still be installed, completely untouched, and can be run with the simple “python” command as always. </em>If you want to avoid having to type python3 everytime, follow isntructions b.1-b4 above and then head over to #1!</p>
 </div>
 <div id="what-is-anaconda" class="section level3">
@@ -239,8 +250,16 @@ conda create --name b216 biopython
 #don&#39;t forget to deactivate it and create a new one for any new major projects!
 conda deactivate</code></pre>
 </div>
+<div id="online-terminal" class="section level2">
+<h2>2) Online terminal</h2>
+<ul>
+<li><p>Go to <a href="https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/18a9793b58ba86660b5ab964e1aeaf7324d667c8?urlpath=lab%2Ftree%2Fdemo%2FLorenz.ipynb">this page</a> and access Jupyter Lab directly on your browser.</p></li>
+<li><p>If this seems to have worked, great! Select “terminal”. This will open a bash terminal.</p></li>
+<li><p>Head over to the <a href="##1.-check-your-python-version.">beginning of this tutorial</a> and follow all of the steps.</p></li>
+</ul>
 <div id="the-end" class="section level3">
 <h3>The end!</h3>
+</div>
 </div>
 
 

@@ -1,64 +1,48 @@
 ---
-title: "Installing FASTQE"
+title: "Fun Introductory Command Line Exercise: Next Generation Sequencing (NGS) Quality Analysis with Emoji 💻 📈 😻"
+subtitle: "Developed by: Ray Enke, Rachael St. Jaques1, Max Maza, Caylin Murray, Sabrina Robertson, Andrew Lonsdale, & Jason Williams"
 output:
   html_document:
     df_print: paged
 ---
 
-This tutorial guides you through installing FASTE.
+
+## Learning Goals: Use basic command line coding to:
+
+*Introduce students to writing basic command line scripts
+*Analyze & assess the quality of FASTQ formatted NGS data
+*Trim/filter low quality reads in FASTQ files
+
+## Background 
+The 1st step of any Next Generation Sequencing (NGS) analysis pipeline is checking the quality of the raw sequencing reads in each FASTQ formatted file. If the sequence quality is poor, then your resulting downstream analysis will be inaccurate and misleading. 
+
+FastQC is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI 😻😻😻. 
+
+FASTQE is a program that analyzes FASTQ files & reads out an emoji output as an indicator of the sequence’s quality in the file. So, a high quality read may look like this 😃, while this symbol 💩 indicates... well you get the idea.
+
+Like the popular FastQC software, FASTQE can be used to analyze FASTQ file quality whether it’s from a genome sequencing project, an RNA-seq project, a ChIP-seq project, etc. Here’s a brief background on the in-class metagenomics project that Dr. Enke’s Bio 481 Genomics class at James Madison University is collecting data for. Garter snakes excrete sexually dimorphic pheromones to attract a mate. 
+
+The hypothesis of their experiment is that male and female garter snakes host unique microbial communities in their musk glands that contribute to sexually dimorphic bioengineering of these pheromone molecules. We are using FASTQ files from this project but feel free to substitute your own favorite FASTQ files for this activity if you like.
 
 
-### 1. Install FASTQE
 
-Activate your b216 conda environment:
+## Technical requirements/limitations:
 
-```{bash, eval=F}
-conda activate b216
+*FASTQE software is able to run natively on Mac OS or Linux computer with Anaconda installed. Since Windows does not support the use of emoticons (😟😱😿), this implementation of the lesson can be also be run in a Jupyter notebook on any machine!
+
+
+*Lastly, the FASTQE program is limited to short read NGS data of 500bp/read or less.
+
+
+## Hands-on assignment:
+
+
+Part 1: Download FASTQ files and run fastqe
+Jupyter allows you to run commands by selecting a cell and then click the play button or Cntrl+Enter.
+
+For example, running the next cell executes the pwd (print working directory) command, which will tell you what directory this notebook is located in.
+
+```{bash}
+
 ```
 
-Install [fastqe](https://fastqe.com/):
-```{bash, eval=F}
-conda install -c bioconda/label/cf201901 fastp #
-```
-
-If there were no error messages, test that it worked:
-
-```{bash, eval=F}
-fastqe
-```
-
-```{bash, eval=F}
-Filename        Statistic       Qualities
-Processing FASTQ file from stdin, press Ctrl-C to cancel. fastqe --help for more info
-```
-
-IF you see that, it's a good sign! You can always cancel something that's running by pressing control+c
-
-
-### 2. Download input files for fastqe
-
-Manually download the file fastq.zip from our [Moodle page](https://moodle.brynmawr.edu/pluginfile.php/211780/mod_folder/content/0/fastq.zip):
-
-
-Copy the file from your downloads folder into the current directory
-```{bash, eval=F}
-
-cp ~/Downloads/fastq.zip . # "." means "this directory"
-`
-#check
-
-ls
-```
-
-Check that the file is in your directory
-```{bash, eval=F}
-ls -l #this flag makes the file be listed in a list-like way
-```
-
-Unzip the file
-
-```{bash,eval=F}
-unzip fastq.zip
-```
-
-### The end!

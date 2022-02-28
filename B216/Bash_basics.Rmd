@@ -41,7 +41,8 @@ Q1. What does this show you?
 Move to your desktop folder by using the "change directory command". Type:
 
 ```{bash, eval=F}
-cd ~/Desktop #the "~" is a shortcut that means "home directory".
+cd ~/Desktop 
+#the "~" is a shortcut that means "home directory".
 #everything written after "#" is ignored by the shell, which is why we write comments after "#" when writing code.
 ```
 
