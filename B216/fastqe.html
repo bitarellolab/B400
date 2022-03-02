@@ -182,12 +182,13 @@ pre code {
 </div>
 <div id="background" class="section level2">
 <h2>Background</h2>
-<p>The 1st step of any Next Generation Sequencing (NGS) analysis pipeline is checking the quality of the raw sequencing reads in each FASTQ formatted file. If the sequence quality is poor, then your resulting downstream analysis will be inaccurate and misleading.</p>
-<p>FastQC is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI 😻😻😻.</p>
-<p>FASTQE is a program that analyzes FASTQ files &amp; reads out an emoji output as an indicator of the sequence’s quality in the file. So, a high quality read may look like this 😃, while this symbol 💩 indicates… well you get the idea.</p>
-<p>Like the popular FastQC software, FASTQE can be used to analyze FASTQ file quality whether it’s from a genome sequencing project, an RNA-seq project, a ChIP-seq project, etc. Here’s a brief background on the in-class metagenomics project that Dr. Enke’s Bio 481 Genomics class at James Madison University is collecting data for. Garter snakes excrete sexually dimorphic pheromones to attract a mate.</p>
-<p>The hypothesis of their experiment is that male and female garter snakes host unique microbial communities in their musk glands that contribute to sexually dimorphic bioengineering of these pheromone molecules. We are using FASTQ files from this project but feel free to substitute your own favorite FASTQ files for this activity if you like.</p>
-<p>The FASTQE program is limited to short read NGS data of 500bp/read or less.</p>
+<ul>
+<li><p>The 1st step of any Next Generation Sequencing (NGS) analysis pipeline is checking the quality of the raw sequencing reads in each FASTQ formatted file. If the sequence quality is poor, then your resulting downstream analysis will be inaccurate and misleading.</p></li>
+<li><p>FastQC is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI 😻😻😻.</p></li>
+<li><p>FASTQE is a program that analyzes FASTQ files &amp; reads out an emoji output as an indicator of the sequence’s quality in the file. So, a high quality read may look like this 😃, while this symbol 💩 indicates… well you get the idea.</p></li>
+<li><p>Like the popular FastQC software, FASTQE can be used to analyze FASTQ file quality whether it’s from a genome sequencing project, an RNA-seq project, a ChIP-seq project, etc. Here’s a brief background on the in-class metagenomics project that Dr. Enke’s Bio 481 Genomics class at James Madison University is collecting data for. Garter snakes excrete sexually dimorphic pheromones to attract a mate.</p></li>
+<li><p>The hypothesis of their experiment is that male and female garter snakes host unique microbial communities in their musk glands that contribute to sexually dimorphic bioengineering of these pheromone molecules. We are using FASTQ files from this project but feel free to substitute your own favorite FASTQ files for this activity if you like.</p></li>
+</ul>
 </div>
 <div id="technical-requirementslimitations" class="section level2">
 <h2>Technical requirements/limitations:</h2>
@@ -195,6 +196,7 @@ pre code {
 <li><p>FASTQE software is able to run natively on Mac OS or Linux computer with Anaconda installed. Since Windows does not support the use of emoticons (😟😱😿), this implementation of the lesson can be also be run in a Jupyter notebook on any machine!</p></li>
 <li><p>Use your own machine (linux or mac) if you have anaconda and Python version &gt;=3 installed.</p></li>
 <li><p>Use jupyter lab online if you don’t or prefer the online version. If so, use the “upload” button to upload the file “fastqe.ipynbd”. Click on it and open it. Open also a terminal window on jupyter lab and follow the instructions.</p></li>
+<li><p>The FASTQE program is limited to short read NGS data of 500bp/read or less.</p></li>
 </ul>
 <hr />
 </div>
@@ -203,7 +205,13 @@ pre code {
 <p>Jupyter allows you to run commands by selecting a cell and then click the play button or Cntrl+Enter.</p>
 <p>For example, running the next cell executes the pwd (print working directory) command, which will tell you what directory this notebook is located in. Try it:</p>
 <pre class="bash"><code>pwd</code></pre>
-<pre><code>## /Users/dudutchy/Documents/GitHub/Teaching/B216</code></pre>
+<p>If you’ve printed a path that doesn’t make sense (i.e. the directory you navigated to is the incorrect directory) how would you go back to the previous directory? (hint, it includes the change directory command)</p>
+<ul>
+<li>Hint, type your commands in the cell below to see how the cd (change directory) command works.</li>
+<li>Next, navigate to the data folder using the cd /home/joyvan/data command</li>
+<li>Execute the pwd command again to confirm that you are in your desktop directory</li>
+</ul>
+<p><strong>Your output for the pwd command must be /home/joyvan/data - otherwise the rest of the lesson will not work because you will not be in the correct directory</strong></p>
 </div>
 
 

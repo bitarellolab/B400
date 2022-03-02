@@ -5,15 +5,10 @@ output:
     df_print: paged
 ---
 
-* Option 1: If you are using either Linux or Mac and have installed Python version>=3 and Anaconda.
+## Table of Contents
 
-* Option 2: If you are using a Windows machine or have not installed Python version>=3 and Anaconda.
-
-
-# Table of Contents
-
-* [Option 1. Installing jupyter lab](#option-1.-installing-jupyter-lab)
-* [Option 2. Using jupyter lab on the web ](#option-2.-using-jupyter-lab-on-the-web)
+* [Option 1. Installing jupyter lab](#option-1.-installing-jupyter-lab). If you are using either Linux or Mac and have installed Python version>=3 and Anaconda.
+* [Option 2. Using jupyter lab on the web ](#option-2.-using-jupyter-lab-on-the-web). If you're using the online command line through Binder.
 
 
 ## Option 1. Installing jupyter lab
@@ -44,4 +39,4 @@ Go to the [previous step in this tutorial](https://bitarellolab.github.io/Teachi
 Now that you have an open browser with jupyter lab running,follow the instructions in this tutorial for [option 1.](#option-1.-installing-jupyter-lab)
  
 
-## The end!
+The end!

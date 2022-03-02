@@ -8,23 +8,16 @@ output:
 ## Table of contents
 
 * [You need a terminal](#you-need-a-terminal)
-
 * [Check your python version](#check-your-python-version)
-
 * [Instal Python 3](#instal-python-3)
-
 * [What is Anaconda?](#what-is-anaconda?)
-
 * [How do I install anaconda?](#how-do-i-install-anaconda?)
-
 * [Test your installation](#test-your-installation)
-
 * [Create and manage a conda environment](#create-and-manage-a-conda-environment)
-
 
 ## You need a terminal
 
-* You can use your own terminal on a Mac or Linux machine OR
+* You can use your own terminal on a Mac or Linux machine OR;
 
 * Go to [this page](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/18a9793b58ba86660b5ab964e1aeaf7324d667c8?urlpath=lab%2Ftree%2Fdemo%2FLorenz.ipynb) and access Jupyter Lab directly on your browser. If this seems to have worked, great! Select "terminal". This will open a bash terminal.
 
@@ -33,13 +26,16 @@ output:
 
 In the command line, type:
 
-```{bash}
+```{bash, eval=F}
 python --version
 #or
 python -V
 ```
 
-a. If you got a version >=3, head over to step 1. 
+**If you got a version >=3, head over to [What is Anaconda](#what-is-anaconda?).**
+
+
+**This section (next 6 steps) is only needed if you're using your own computer. If you're not, head over to [What is Anaconda](#what-is-anaconda?)**
 
 b. If you got a version < 3, run this:
 
@@ -53,31 +49,32 @@ b.1. If you get some kind of result telling you which python3 version you have, 
 ```{bash, echo=T, eval=F}
 open ~/.zshrc  #you can skip this if you are using a web-based command line
 ```
+
 b.2. A file will open. Paste the following into the first line of that file:
 
 ```{bash}
 alias python=/usr/local/bin/python3 ##you can skip this if you are using a web-based command line
 ```
 
+
 b.3. Save the file and close it. Then type:
-```{bash}
+```{bash, eval=F}
 source ~/.zshrc #you can skip this if you are using a web-based command line
 ```
+
 
 b.4 And finally:
 ```{bash, eval=F}
 python --version 
 ```
 
-```{bash, eval=F}
-Python 3.10.0
-```
-
 Hopefully this now returns a python version >=3!
 
 ## Instal Python 3
+
 If you have no python3 installed, let's install it.
-**ONLY RUN THIS IF YOU DON"T HAVE PYTHON3 INSTALLED**
+
+**ONLY RUN THIS IF YOU DONT HAVE PYTHON3 INSTALLED**
 
 * Go to the Python.org downloads page here and download the latest python installer package.
 *Run the Python installer package and install Python 3 onto the Mac
@@ -89,21 +86,27 @@ python3 -V
 *Whether you install the updated Python 3 with the package installer or Homebrew, the default version of Python 2.7 that comes preinstalled with Mac OS and Mac OS X will still be installed, completely untouched, and can be run with the simple “python” command as always.
 *If you want to avoid having to type python3 everytime, follow isntructions b.1-b4 above and then head over to #1!
 
----------------
 
 
 ## What is Anaconda?
 
-Anaconda.org is a package management service by Anaconda. Anaconda.org makes it easy to find, access, store and share public notebooks, environments, and conda and PyPI packages. Anaconda.org also makes it easy to stay current with updates made to the packages and environments you are using. Anaconda.org hosts hundreds of useful Python packages, notebooks, projects and environments for a wide variety of applications. You do not need to log in, or even to have a Anaconda.org account, to search for public packages, download and install them.
+Anaconda.org is a package management service by Anaconda. 
+* Anaconda.org makes it easy to find, access, store and share public notebooks, environments, and conda and PyPI packages. 
+* Anaconda.org also makes it easy to stay current with updates made to the packages and environments you are using. 
+* Anaconda.org hosts hundreds of useful Python packages, notebooks, projects and environments for a wide variety of applications. You do not need to log in, or even to have a Anaconda.org account, to search for public packages, download and install them.
+
+
+**Installing anaconda is only needed if you're using your own computer. If you're not, head over to [Test your installation](#test-your-installation).**
 
 ## How do I install anaconda?
 
 You can follow the wonderful instructions from data camp [here](https://www.datacamp.com/community/tutorials/installing-anaconda-mac-os-x) or simply follow the shorter version below:
 
-*Go to the [Anaconda website](https://www.anaconda.com/products/individual#macos) and choose a Python 3.x graphical installer.
-*Download the "individual edition" and follow the instructions as your normally would for a Mac package.
-*Note that when you install Anaconda, it modifies your bash profile with anaconda3.This can important for later. Click on Continue.
-*You should get a screen saying the installation has completed. Close the installer and move it to the trash.
+* Go to the [Anaconda website](https://www.anaconda.com/products/individual#macos) and choose a Python 3.x graphical installer.
+* Download the "individual edition" and follow the instructions as your normally would for a Mac package.
+* Note that when you install Anaconda, it modifies your bash profile with anaconda3.This can important for later. Click on Continue.
+* You should get a screen saying the installation has completed. Close the installer and move it to the trash.
+
 
 ## Test your installation
 
@@ -135,7 +138,7 @@ When you begin using conda, you already have a default environment named base. Y
 First, go to the directory you want to work on:
 
 ```{bash, echo=T, eval=F}
-cd ~/Documents/GitHub/Teaching_BMC/B216
+cd ~/Documents/GitHub/Teaching/B216
 #create environment
 conda create --name b216
 #this command creates environment b216 and installs the package biopython
@@ -151,4 +154,4 @@ conda deactivate
 ```
 
 
-### The end!
+The end!

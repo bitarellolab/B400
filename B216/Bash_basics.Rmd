@@ -5,7 +5,7 @@ output:
     df_print: paged
 ---
 
-* [What the hell is \"the shell\"?](#what-the-hell-is-\"the-shell\"?)
+* [What the hell is "the shell"?](#what-the-hell-is-\"the-shell\"?)
 * [Why should I use one?](#why-should-i-use-one?)
 * [Getting started!](#getting-started!)
 * [References](#references)

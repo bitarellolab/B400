@@ -173,19 +173,19 @@ pre code {
 <div id="table-of-contents" class="section level2">
 <h2>Table of contents</h2>
 <ul>
-<li><p><a href="#you-need-a-terminal">You need a terminal</a></p></li>
-<li><p><a href="#check-your-python-version">Check your python version</a></p></li>
-<li><p><a href="#instal-python-3">Instal Python 3</a></p></li>
-<li><p><a href="#what-is-anaconda?">What is Anaconda?</a></p></li>
-<li><p><a href="#how-do-i-install-anaconda?">How do I install anaconda?</a></p></li>
-<li><p><a href="#test-your-installation">Test your installation</a></p></li>
-<li><p><a href="#create-and-manage-a-conda-environment">Create and manage a conda environment</a></p></li>
+<li><a href="#you-need-a-terminal">You need a terminal</a></li>
+<li><a href="#check-your-python-version">Check your python version</a></li>
+<li><a href="#instal-python-3">Instal Python 3</a></li>
+<li><a href="#what-is-anaconda?">What is Anaconda?</a></li>
+<li><a href="#how-do-i-install-anaconda?">How do I install anaconda?</a></li>
+<li><a href="#test-your-installation">Test your installation</a></li>
+<li><a href="#create-and-manage-a-conda-environment">Create and manage a conda environment</a></li>
 </ul>
 </div>
 <div id="you-need-a-terminal" class="section level2">
 <h2>You need a terminal</h2>
 <ul>
-<li><p>You can use your own terminal on a Mac or Linux machine OR</p></li>
+<li><p>You can use your own terminal on a Mac or Linux machine OR;</p></li>
 <li><p>Go to <a href="https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/18a9793b58ba86660b5ab964e1aeaf7324d667c8?urlpath=lab%2Ftree%2Fdemo%2FLorenz.ipynb">this page</a> and access Jupyter Lab directly on your browser. If this seems to have worked, great! Select “terminal”. This will open a bash terminal.</p></li>
 </ul>
 </div>
@@ -195,11 +195,10 @@ pre code {
 <pre class="bash"><code>python --version
 #or
 python -V</code></pre>
-<pre><code>## Python 3.8.10
-## Python 3.8.10</code></pre>
-<ol style="list-style-type: lower-alpha">
-<li><p>If you got a version &gt;=3, head over to step 1.</p></li>
-<li><p>If you got a version &lt; 3, run this:</p></li>
+<p><strong>If you got a version &gt;=3, head over to <a href="#what-is-anaconda?">What is Anaconda</a>.</strong></p>
+<p><strong>This section (next 6 steps) is only needed if you’re using your own computer. If you’re not, head over to <a href="#what-is-anaconda?">What is Anaconda</a></strong></p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>If you got a version &lt; 3, run this:</li>
 </ol>
 <pre class="bash"><code>python3 --version
 #</code></pre>
@@ -211,28 +210,33 @@ python -V</code></pre>
 <pre class="bash"><code>source ~/.zshrc #you can skip this if you are using a web-based command line</code></pre>
 <p>b.4 And finally:</p>
 <pre class="bash"><code>python --version </code></pre>
-<pre class="bash"><code>Python 3.10.0</code></pre>
 <p>Hopefully this now returns a python version &gt;=3!</p>
 </div>
 <div id="instal-python-3" class="section level2">
 <h2>Instal Python 3</h2>
-<p>If you have no python3 installed, let’s install it. <strong>ONLY RUN THIS IF YOU DON”T HAVE PYTHON3 INSTALLED</strong></p>
+<p>If you have no python3 installed, let’s install it.</p>
+<p><strong>ONLY RUN THIS IF YOU DONT HAVE PYTHON3 INSTALLED</strong></p>
 <ul>
 <li>Go to the Python.org downloads page here and download the latest python installer package. <em>Run the Python installer package and install Python 3 onto the Mac </em>Python 3.8.x requires about 100mb of disk space to install. Installation is quick, and you’ll have Python 3.x alongside Python 2.x on the Mac. *Once the installation concludes, go to your terminal and type:</li>
 </ul>
 <pre class="bash"><code>python3 -V</code></pre>
 <pre><code>## Python 3.8.10</code></pre>
 <p><em>Whether you install the updated Python 3 with the package installer or Homebrew, the default version of Python 2.7 that comes preinstalled with Mac OS and Mac OS X will still be installed, completely untouched, and can be run with the simple “python” command as always. </em>If you want to avoid having to type python3 everytime, follow isntructions b.1-b4 above and then head over to #1!</p>
-<hr />
 </div>
 <div id="what-is-anaconda" class="section level2">
 <h2>What is Anaconda?</h2>
-<p>Anaconda.org is a package management service by Anaconda. Anaconda.org makes it easy to find, access, store and share public notebooks, environments, and conda and PyPI packages. Anaconda.org also makes it easy to stay current with updates made to the packages and environments you are using. Anaconda.org hosts hundreds of useful Python packages, notebooks, projects and environments for a wide variety of applications. You do not need to log in, or even to have a Anaconda.org account, to search for public packages, download and install them.</p>
+<p>Anaconda.org is a package management service by Anaconda. * Anaconda.org makes it easy to find, access, store and share public notebooks, environments, and conda and PyPI packages. * Anaconda.org also makes it easy to stay current with updates made to the packages and environments you are using. * Anaconda.org hosts hundreds of useful Python packages, notebooks, projects and environments for a wide variety of applications. You do not need to log in, or even to have a Anaconda.org account, to search for public packages, download and install them.</p>
+<p><strong>Installing anaconda is only needed if you’re using your own computer. If you’re not, head over to <a href="#test-your-installation">Test your installation</a>.</strong></p>
 </div>
 <div id="how-do-i-install-anaconda" class="section level2">
 <h2>How do I install anaconda?</h2>
 <p>You can follow the wonderful instructions from data camp <a href="https://www.datacamp.com/community/tutorials/installing-anaconda-mac-os-x">here</a> or simply follow the shorter version below:</p>
-<p><em>Go to the <a href="https://www.anaconda.com/products/individual#macos">Anaconda website</a> and choose a Python 3.x graphical installer. </em>Download the “individual edition” and follow the instructions as your normally would for a Mac package. <em>Note that when you install Anaconda, it modifies your bash profile with anaconda3.This can important for later. Click on Continue. </em>You should get a screen saying the installation has completed. Close the installer and move it to the trash.</p>
+<ul>
+<li>Go to the <a href="https://www.anaconda.com/products/individual#macos">Anaconda website</a> and choose a Python 3.x graphical installer.</li>
+<li>Download the “individual edition” and follow the instructions as your normally would for a Mac package.</li>
+<li>Note that when you install Anaconda, it modifies your bash profile with anaconda3.This can important for later. Click on Continue.</li>
+<li>You should get a screen saying the installation has completed. Close the installer and move it to the trash.</li>
+</ul>
 </div>
 <div id="test-your-installation" class="section level2">
 <h2>Test your installation</h2>
@@ -249,7 +253,7 @@ python -V</code></pre>
 <p>Conda allows you to create separate environments containing files, packages, and their dependencies that will not interact with other environments.</p>
 <p>When you begin using conda, you already have a default environment named base. You don’t want to put programs into your base environment, though. Create separate environments to keep your programs isolated from each other.</p>
 <p>First, go to the directory you want to work on:</p>
-<pre class="bash"><code>cd ~/Documents/GitHub/Teaching_BMC/B216
+<pre class="bash"><code>cd ~/Documents/GitHub/Teaching/B216
 #create environment
 conda create --name b216
 #this command creates environment b216 and installs the package biopython</code></pre>
@@ -258,9 +262,7 @@ conda create --name b216
 #this activate the conda environment b216
 #don&#39;t forget to deactivate it and create a new one for any new major projects!
 conda deactivate</code></pre>
-<div id="the-end" class="section level3">
-<h3>The end!</h3>
-</div>
+<p>The end!</p>
 </div>
 
 

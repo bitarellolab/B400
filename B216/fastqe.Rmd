@@ -15,17 +15,16 @@ output:
 
 ## Background 
 
-The 1st step of any Next Generation Sequencing (NGS) analysis pipeline is checking the quality of the raw sequencing reads in each FASTQ formatted file. If the sequence quality is poor, then your resulting downstream analysis will be inaccurate and misleading. 
+* The 1st step of any Next Generation Sequencing (NGS) analysis pipeline is checking the quality of the raw sequencing reads in each FASTQ formatted file. If the sequence quality is poor, then your resulting downstream analysis will be inaccurate and misleading. 
 
-FastQC is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI 😻😻😻. 
+* FastQC is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI 😻😻😻. 
 
-FASTQE is a program that analyzes FASTQ files & reads out an emoji output as an indicator of the sequence’s quality in the file. So, a high quality read may look like this 😃, while this symbol 💩 indicates... well you get the idea.
+* FASTQE is a program that analyzes FASTQ files & reads out an emoji output as an indicator of the sequence’s quality in the file. So, a high quality read may look like this 😃, while this symbol 💩 indicates... well you get the idea.
 
-Like the popular FastQC software, FASTQE can be used to analyze FASTQ file quality whether it’s from a genome sequencing project, an RNA-seq project, a ChIP-seq project, etc. Here’s a brief background on the in-class metagenomics project that Dr. Enke’s Bio 481 Genomics class at James Madison University is collecting data for. Garter snakes excrete sexually dimorphic pheromones to attract a mate. 
+* Like the popular FastQC software, FASTQE can be used to analyze FASTQ file quality whether it’s from a genome sequencing project, an RNA-seq project, a ChIP-seq project, etc. Here’s a brief background on the in-class metagenomics project that Dr. Enke’s Bio 481 Genomics class at James Madison University is collecting data for. Garter snakes excrete sexually dimorphic pheromones to attract a mate. 
 
-The hypothesis of their experiment is that male and female garter snakes host unique microbial communities in their musk glands that contribute to sexually dimorphic bioengineering of these pheromone molecules. We are using FASTQ files from this project but feel free to substitute your own favorite FASTQ files for this activity if you like.
+* The hypothesis of their experiment is that male and female garter snakes host unique microbial communities in their musk glands that contribute to sexually dimorphic bioengineering of these pheromone molecules. We are using FASTQ files from this project but feel free to substitute your own favorite FASTQ files for this activity if you like.
 
-The FASTQE program is limited to short read NGS data of 500bp/read or less.
 
 ## Technical requirements/limitations:
 
@@ -34,6 +33,8 @@ The FASTQE program is limited to short read NGS data of 500bp/read or less.
 * Use your own machine (linux or mac) if you have anaconda and Python version >=3 installed.
 
 * Use jupyter lab online if you don't or prefer the online version. If so, use the "upload" button to upload the file "fastqe.ipynbd". Click on it and open it. Open also a terminal window on jupyter lab and follow the instructions.
+
+* The FASTQE program is limited to short read NGS data of 500bp/read or less.
 
 ---
 
@@ -44,8 +45,14 @@ Jupyter allows you to run commands by selecting a cell and then click the play b
 
 For example, running the next cell executes the pwd (print working directory) command, which will tell you what directory this notebook is located in. Try it:
 
-```{bash}
+```{bash, eval=F}
 pwd
 ```
 
+If you’ve printed a path that doesn’t make sense (i.e. the directory you navigated to is the incorrect directory) how would you go back to the previous directory? (hint, it includes the change directory command)
 
+* Hint, type your commands in the cell below to see how the cd (change directory) command works.
+* Next, navigate to the data folder using the cd /home/joyvan/data command
+* Execute the pwd command again to confirm that you are in your desktop directory
+
+**Your output for the pwd command must be /home/joyvan/data - otherwise the rest of the lesson will not work because you will not be in the correct directory**
