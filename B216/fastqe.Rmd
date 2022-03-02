@@ -186,4 +186,4 @@ Click on the fastp.html file in the Jupyter menu on the left to examine this rep
 Q3. From the “Summary” data in your HTML fastp report, how many reads are in this FASTQ file before and after filtering?
 
 
-The end
+The end!
