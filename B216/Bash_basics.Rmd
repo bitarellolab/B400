@@ -5,6 +5,13 @@ output:
     df_print: paged
 ---
 
+* [What the hell is \"the shell\"?](#what-the-hell-is-\"the-shell\"?)
+* [Why should I use one?](#why-should-i-use-one?)
+* [Getting started!](#getting-started!)
+* [References](#references)
+
+---
+
 Hi everyone! 
 
 This will be a very soft introduction to the command-line.
@@ -131,6 +138,6 @@ cd ../ # this command means "go back to the directory above this one in the hier
 
 https://swcarpentry.github.io/shell-novice/01-intro/index.html
 
-### The end!
+The end!
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Fun Introductory Command Line Exercise: Next Generation Sequencing (NGS) Quality Analysis with Emoji 💻 📈 😻"
-subtitle: "Developed by: Ray Enke, Rachael St. Jaques1, Max Maza, Caylin Murray, Sabrina Robertson, Andrew Lonsdale, & Jason Williams"
+title: "Fun Introductory Command Line Exercise: Next Generation Sequencing (NGS) Quality Analysis with Emoji"
+author: "Developed by: Ray Enke, Rachael St. Jaques1, Max Maza, Caylin Murray, Sabrina Robertson, Andrew Lonsdale, & Jason Williams. Modified by Bárbara Bitarello"
 output:
   html_document:
     df_print: paged
@@ -9,11 +9,12 @@ output:
 
 ## Learning Goals: Use basic command line coding to:
 
-*Introduce students to writing basic command line scripts
-*Analyze & assess the quality of FASTQ formatted NGS data
-*Trim/filter low quality reads in FASTQ files
+* Introduce students to writing basic command line scripts
+* Analyze & assess the quality of FASTQ formatted NGS data
+* Trim/filter low quality reads in FASTQ files
 
 ## Background 
+
 The 1st step of any Next Generation Sequencing (NGS) analysis pipeline is checking the quality of the raw sequencing reads in each FASTQ formatted file. If the sequence quality is poor, then your resulting downstream analysis will be inaccurate and misleading. 
 
 FastQC is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI 😻😻😻. 
@@ -24,25 +25,27 @@ Like the popular FastQC software, FASTQE can be used to analyze FASTQ file quali
 
 The hypothesis of their experiment is that male and female garter snakes host unique microbial communities in their musk glands that contribute to sexually dimorphic bioengineering of these pheromone molecules. We are using FASTQ files from this project but feel free to substitute your own favorite FASTQ files for this activity if you like.
 
-
+The FASTQE program is limited to short read NGS data of 500bp/read or less.
 
 ## Technical requirements/limitations:
 
-*FASTQE software is able to run natively on Mac OS or Linux computer with Anaconda installed. Since Windows does not support the use of emoticons (😟😱😿), this implementation of the lesson can be also be run in a Jupyter notebook on any machine!
+* FASTQE software is able to run natively on Mac OS or Linux computer with Anaconda installed. Since Windows does not support the use of emoticons (😟😱😿), this implementation of the lesson can be also be run in a Jupyter notebook on any machine!
+
+* Use your own machine (linux or mac) if you have anaconda and Python version >=3 installed.
+
+* Use jupyter lab online if you don't or prefer the online version. If so, use the "upload" button to upload the file "fastqe.ipynbd". Click on it and open it. Open also a terminal window on jupyter lab and follow the instructions.
+
+---
 
 
-*Lastly, the FASTQE program is limited to short read NGS data of 500bp/read or less.
+## Part 1: Download FASTQ files and run fastqe
 
-
-## Hands-on assignment:
-
-
-Part 1: Download FASTQ files and run fastqe
 Jupyter allows you to run commands by selecting a cell and then click the play button or Cntrl+Enter.
 
-For example, running the next cell executes the pwd (print working directory) command, which will tell you what directory this notebook is located in.
+For example, running the next cell executes the pwd (print working directory) command, which will tell you what directory this notebook is located in. Try it:
 
 ```{bash}
-
+pwd
 ```
+
 
