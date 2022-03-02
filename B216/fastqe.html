@@ -212,6 +212,51 @@ pre code {
 <li>Execute the pwd command again to confirm that you are in your desktop directory</li>
 </ul>
 <p><strong>Your output for the pwd command must be /home/joyvan/data - otherwise the rest of the lesson will not work because you will not be in the correct directory</strong></p>
+<p>Now, create a subdirecory within the one you’re in using the “make directory”. command</p>
+<ul>
+<li>Usage: mkdir [dir_name]</li>
+</ul>
+<p>After you create that directory, head over to it using the “change directory” (cd) command.</p>
+</div>
+<div id="step-1" class="section level2">
+<h2>Step 1</h2>
+<p>Using the wget command, download the three fastq files listed below:</p>
+<pre class="bash"><code>https://github.com/bitarellolab/Teaching/blob/main/B216/filestoshare/Female2-oral1.fastq
+https://github.com/bitarellolab/Teaching/blob/main/B216/filestoshare/Male5-oral1.fastq
+https://github.com/bitarellolab/Teaching/blob/main/B216/filestoshare/Male5-oral2.fastq
+</code></pre>
+<p>The wget command we will use has three components</p>
+<ul>
+<li><p>Usage: wget -O [filename] [URL]</p></li>
+<li><p>wget the name of the program</p></li>
+<li><p>-O the -O is an option we can pass to the wget program, this option let’s us choose the name we want our file to be saved as, in this case fastq.zip.</p></li>
+<li><p>URL in this the URL you want to download a file from</p></li>
+<li><p>Type wget then a space, -O filename.fastq, another space, then the URL you are downloading from</p></li>
+</ul>
+<p>Now you can check that you have the files in your /home/jovyan/data directory by using the “list” command.</p>
+<ul>
+<li>Usage: ls [directory] (list contents of a directory - if left blank, will display for the current directory, if a wildcard [e.g. *.file-extension] is provided, will list all the files with the given file extension)</li>
+</ul>
+<p>** TRY IT! **</p>
+<p>Did you see the files you downloaded? Good!</p>
+</div>
+<div id="step-2." class="section level2">
+<h2>Step 2.</h2>
+<p>Now let’s install the fastqe package. Use the “pip install” command.</p>
+<ul>
+<li>Usage: pip install [packagename]</li>
+</ul>
+<p>** TRY IT! **</p>
+<p>Hopefully that went smoothly!</p>
+</div>
+<div id="step-3" class="section level2">
+<h2>Step 3</h2>
+<ul>
+<li><p>Task: Run the fastqe program to generate your emoji fastq report.</p></li>
+<li><p>Usage: fastqe [fastq-file] (run the fastqe program. If a wildcard [e.g. *.fastq] is provided, fastqe will run on all the fastq files in the current working directory.</p></li>
+</ul>
+<p>Note: Remember that fastq files are very large, so this command will take ~30 seconds/</p>
+<pre class="bash"><code>fastqe *fastq</code></pre>
 </div>
 
 

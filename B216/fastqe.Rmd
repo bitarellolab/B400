@@ -56,3 +56,61 @@ If you’ve printed a path that doesn’t make sense (i.e. the directory you nav
 * Execute the pwd command again to confirm that you are in your desktop directory
 
 **Your output for the pwd command must be /home/joyvan/data - otherwise the rest of the lesson will not work because you will not be in the correct directory**
+
+Now, create a subdirecory within the one you're in using the "make directory". command
+
+* Usage: mkdir [dir_name]
+
+After you create that directory, head over to it using the "change directory" (cd) command.
+
+## Step 1
+
+Using the wget command, download the three fastq files listed below:
+```{bash, eval=F}
+https://github.com/bitarellolab/Teaching/blob/main/B216/filestoshare/Female2-oral1.fastq
+https://github.com/bitarellolab/Teaching/blob/main/B216/filestoshare/Male5-oral1.fastq
+https://github.com/bitarellolab/Teaching/blob/main/B216/filestoshare/Male5-oral2.fastq
+
+```
+
+The wget command we will use has three components
+
+* Usage: wget -O [filename] [URL]
+
+* wget the name of the program
+
+* -O the -O is an option we can pass to the wget program, this option let's us choose the name we want our file to be saved as, in this case fastq.zip.
+
+* URL in this the URL you want to download a file from
+* Type wget then a space, -O filename.fastq, another space, then the URL you are downloading from
+
+Now you can check that you have the files in your /home/jovyan/data directory by using the "list" command. 
+
+* Usage: ls [directory] (list contents of a directory - if left blank, will display for the current directory, if a wildcard [e.g. *.file-extension] is provided, will list all the files with the given file extension)
+
+** TRY IT! **
+
+Did you see the files you downloaded? Good!
+
+## Step 2.
+
+Now let's install the fastqe package. Use the "pip install" command.
+
+* Usage: pip install [packagename]
+
+** TRY IT! **
+
+Hopefully that went smoothly!
+
+## Step 3
+
+* Task: Run the fastqe program to generate your emoji fastq report.
+
+* Usage: fastqe [fastq-file] (run the fastqe program. If a wildcard [e.g. *.fastq] is provided, fastqe will run on all the fastq files in the current working directory.
+
+Note: Remember that fastq files are very large, so this command will take ~30 seconds/
+
+```{bash, eval=F}
+fastqe *fastq
+```
+
