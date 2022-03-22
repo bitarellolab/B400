@@ -164,14 +164,15 @@ FASTP gives a more conventional readout of the .fastq file data. Fastp is simila
 
 Run fastp on the lower quality Male5-oral1.fastq file
 
-* Usage (Note: You will need to use all of these elements in your command):
+```
+ Usage (Note: You will need to use all of these elements in your command):
 
-* fastp is the name of software that will check the quality of the fastq file
-* -i [input.fastq] -i option specifies the input file for fastp
-* -o [ouput.fastq] -o option specifies the ouput file for fastp
-* --html [ouput.html] --html option specifies the name of the HTML report for fastp
-* --json [ouput.json] --json option specifies the name of the JSON report for fastp
-
+fastp is the name of software that will check the quality of the fastq file
+ -i [input.fastq] -i option specifies the input file for fastp
+ -o [ouput.fastq] -o option specifies the ouput file for fastp
+ --html [ouput.html] --html option specifies the name of the HTML report for fastp
+ --json [ouput.json] --json option specifies the name of the JSON report for fastp
+```
 Write a command using Male5-oral1.fastq as your input and out.Male5-oral1.fastq as your output. Name your --html report Male5-oral1.html and your --json report Male5-oral1.json.
 
 ## Step 7
