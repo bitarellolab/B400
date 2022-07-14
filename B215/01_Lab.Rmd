@@ -1,0 +1,27 @@
+---
+title: "Lab1: Basic Building Blocks (swirl tutorial)"
+output:
+  html_document:
+    toc: true
+    theme: united
+#output: html_notebook
+---
+
+## Tasks:
+
+* Install R and Rstudio on your machine. (mac, windows, linux)
+* 
+
+
+
+We will begin by opening Rstudio and installing and loading the package 'swirl'.
+
+```{r}
+install.packages('swirl')
+library(swirl)
+install_course_github("swirldev", "R_Programming_E")
+swirl()
+```
+
+When prompted, choose "R programming E" > 1: Basic Building Blocks
+
