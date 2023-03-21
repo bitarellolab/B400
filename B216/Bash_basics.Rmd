@@ -26,6 +26,8 @@ Read this [5 min tutorial](https://swcarpentry.github.io/shell-novice/01-intro/i
 
 Now you know what it is! It is a computer program that allows you to "talk" to your computer and give it tasks. But you need to speak its language!
 
+In a Unix or Linux based machines, which includes Macs (they use Unix in the background with a fluffy interface for the user), the command line or shell is easy to access. On a Mac, you can do so by going to the app "Terminal". 
+
 ### 2. Why should I use one?
 
 It may not seem worth your while to run a program ONCE using the command-line, but when you find yourself contemplating manually repeating a computational task 100 times, the appeal becomes clear!
@@ -34,16 +36,31 @@ It may not seem worth your while to run a program ONCE using the command-line, b
 * support for automating repetitive tasks
 * capacity to access networked machines.
 
-### 3. Getting started!
+### 3. Opening a terminal window
 
-In your personal or lab computer, go to the "Terminal" application. Tip: if you don't know where to find it, open Finder and search for it. 
 
-Once you open it, run the "path to working directory" command:
+* Mac: In your personal or lab computer (if Linux or Mac), go to the "Terminal" application. Tip: if you don't know where to find it, open Finder and search for it. 
+
+* Windows: if you have never used a command line, just use the one I am providing here in this space. Click on the "terminal" icon on the bottom left.
+
+![](images/collab.png)
+
+
+![](images/collab2.png)
+
+* Alternative: you may try to use this webspace here, which is super cool but it's a bit flimsy (doesn't always work).
+
+
+### 4. Let's get familiar with the terminal!
+
+Once you open a terminal, run the "path to working directory" command:
 
 ```{bash}
 pwd
 ```
-Q1. What does this show you?
+Q1. What does this show you? (I.e., what is the output of this command)
+
+
 
 Move to your desktop folder by using the "change directory command". Type:
 
