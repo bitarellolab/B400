@@ -1,0 +1,213 @@
+---
+title: "B215 Lab Learning Goals"
+output: html_notebook
+---
+
+## From: https://gist.github.com/hadley/6734639
+
+Notes:
+
+* I've tried to break up in to separate pieces, but it's not always possible: e.g. knowledge of data structures and subsetting are tidy intertwined. 
+
+* Level of Bloom's taxonomy listed in square brackets, e.g. http://bit.ly/15gqPEx. Few categories currently assess components higher in the taxonomy.
+
+# Programming R curriculum
+
+## Data structures
+
+* basic data structures (vector, matrix, list and data frame):
+  
+  * list and describe their differences (dimensionality, homogeneous vs. heterogeneous) [knowledge]
+
+  * pick the best data structure for a given problem [application]
+  
+  * recall functions to coerce data structures between different forms [knowledge], and recognise which coercions are lossy [comprehension]
+  
+  * match data types and the functions that identify them, and remember common gotchas (is.vector, is.numeric etc.) [comprehension]
+
+* `str`:
+
+  * interpret the output of `str` [comprehension]
+  
+  * use `str` and subsetting to extract desired pieces from an arbitrary object (for example, extract the r squared value from a linear model) [application]
+
+* vectors:
+  
+  * recognise which types of data corresponding to the four common atomic vectors (character, double, integer, logical) [knowledge]
+  
+  * recognise the use of `L` to create integer vectors [knowledge]
+  
+  * create new vectors with `c()`, and correctly predict vector type when multiple types are mixed (e.g. what is the type of `c(1, 1L, F)`) [application]
+ 
+  * create named vectors with `c()`, recognise how named vectors are printed and how to extract values with character subsetting [application]
+
+  * employ implicit logical to numerical coercion to compute number and proportion of TRUEs in a vector (e.g. what proportion of values are missing?) [application]
+  
+  * predict how missing values propagate [application], and discuss why `is.na()` is necessary [synthesis]
+
+* data frames:
+  
+  * use `data.frame()` to create a data frame from multiple vectors, and control the names of the generated columns [application]
+  
+  * describe the situations under which strings are coerced to factors, and recall how to use `I`, `asis = TRUE` or `stringsAsFactors = FALSE` to prevent conversion [knowledge]
+
+  * combine two or more data frames with `cbind()` and `rbind()`, and describe what conditions must be true for the combination to work [knowledge]
+  
+  * use `head()`, `tail()`, `summary()` and `str()` to get an overview of a data frame [application]
+  
+  * describe how 1d and 2d subsetting of data frame differ, and enumerate the circumstances under which subsetting a data frame will return a column instead of a data frame [comprehension]
+
+* matrices
+
+  * contrast 1d vector operations and 2d matrix operations (e.g. `names()` vs. `colnames()` & `rownames()`, `length()` vs `nrow()` and `ncol()`). [analysis]
+
+  * predict the output when a matrix is coerced into a vector (i.e. remember that R matrices are stored col-wise)
+
+* lists
+  
+  * create a new list with `list()`, and selectively name components [application]
+
+  * convert a list into a vector with unlist, and apply implicit coercion rules to predict type of output [application]
+
+* NULL
+
+* strings vs. factors vs. ordered factors
+  
+  * recall the key differences (cardinality, ordering) between strings, factors and ordered factors [knowledge]
+
+  * select the most appropriate type for a given variable [analysis]
+
+  * describe the operation of `drop = TRUE`, when it is needed, and remedies if you are using it frequently [application]
+  
+  * match data types with conversion and testing functions, and list common gotchas (e.g. converting an ordered factor to a factor) [knowledge]
+
+* know enough about floating point math to predict the output of `sqrt(2)^ 2 - 2 == 0` and spot potentially hazardous use of equality comparisons [application]
+
+## Subsetting
+
+* types of subsetting
+
+  * match the six types of subsetting objects with their results [knowledge]
+
+  * compare and contrast the use of subsetting, `match` and `%in%` when looking for matching values across two vectors [application]
+
+  * use integer subsetting to order multidimensional structures  [application]
+
+  * apply De Morgan's rule to simplify a complicated double negation [application]
+
+  * identify uses of `which()` that are redundant (i.e. only need which you want the position of nth TRUE) [analysis]
+
+  * use repeated values in numeric indexing to create a "subset" that is larger than the original set [application]
+  
+  * use character subsetting to create a lookup table [application]
+
+* understand how 1d subsetting generalises to 2d subsetting [comprehension]
+
+* describe the difference between simplifying and preserving subsetting (`[`` vs `[[`, when `drop = FALSE` is necessary) [analysis]
+
+* understand the difference between `x$y` and `x[["y"]]` and know when to use each form [application]
+
+* use subsetting with assignment to change multiple values in a data structure at once [application]
+
+* use subsetting with assignment and NULL to remove elements from a list/data frame [application]
+ 
+* identify when subsetting + assignment will fail because the number of values to assign does not match the number of values in the subset [analysis]
+
+* use R's boolean operators to recreate english expressions (e.g. x is less than 50 and more than 25). Recall the difference between R's or and or in regular English. [application]
+
+* compare and contrast `&` and `|` with `&&` and `||` [analysis]
+
+## Input and output
+
+* identify the correct function to read/write a data frame to/from  disk (csv, tab delimited or fixed width file) [application]
+
+* use common arguments (`na.string`, `sep`, `header`) to deal with files that have unusual structure [analysis]
+
+* recongise the lack of symmetry between `read.csv()` and `write.csv()`, and describe which options should be used by default [knowledge]
+
+* use subset & transform to reduce the amount of typing for common data manipulation operations [knowledge]
+  
+* use `readRDS`/`saveRDS` to cache binary R objects that were expensive to compute [application]
+
+* understand what `save()` and `load()` do, how they differ from `readRDS()` and `saveRDS()` [knowledge] and when to use them instead of the single object variants [evaluation]
+
+## Functions & control flow
+
+* convert a simple script into parameterised functions [synthesis]
+
+* describe a simple R function in words [synthesis]
+
+* describe R's argument matching semantics (position, partial, exact) [knowledge], predict how they apply in a specific situation [application], and evaluate good and less-good use of the three different types [evaluation]
+
+* describe the parts of a function using correct terminology: body, formal arguments, return value [comprehension]
+
+* use scoping rules to predict how names are mapped to values [application]
+
+* describe short-circuiting and its impact on expressions like `is.null(x) || all(is.na(x))` or `TRUE || stop("!")`
+
+* execute a script of R code with `source())`
+
+## Control flow
+
+* describe the structure of an if statement [comprehension]
+
+* use a for loop to repeat the same operation on different elements of a data structure [application]
+  
+* convert a for loop to a while loop [analysis]
+
+* illustrate why `1:length(x)` is dangerous and suggest a safer way [application]
+
+* correct the identing and spacing of a piece of poorly formatted source code [application]
+
+## Vectorisation/recycling
+
+* describe what vectorisation means, distinguish internal and external vectorisation, and the performance consequence of each functions [knowledge]
+
+* use vectorised operations instead of for loops to perform simple mathematical operations (log, addition, subtraction etc.) [application]
+
+* use `lapply()`, `sapply()` and `apply()` to vectorise operations that are not already vectorised. [analysis]
+
+* convert an `lapply()` call to a for loop [application]
+
+* recognise a for-loop that can be rewritten to use `lapply` [knowledge]
+
+* match common non-vectorised equivalents to their vectorised equivalents (e.g. `min()` and `pmin()`, `sum()` to `cumsum()` and `colSums()`) [knowledge]
+
+* describe basic recycling rules, and know how to avoid them when necesary [knowledge]
+
+## Recovering from errors
+
+* recognise and remedy simple syntax errors (missing quotes, missing parentheses etc.) [comprehension]
+
+* use `try()` to recover from an error [application]
+
+* interpret the output of `traceback()`` to identify where an error occured [application]
+
+* initiate an interactive debugger with `browser()` or `options(error = recover())` [application]
+
+* list the commands used to control `browser()`/`recover()` [knowledge]
+
+* use `options(warn = 2)` to convert warnings into errors for debug
+
+* create a minimal reproducible example to get help from others [synthesis]
+
+* find help for a function, data set, and package [knowledge]
+
+* read and interpret the documentation of a function [analysis]
+
+* use google to identify the name of a function that performs a given task
+
+## Package management
+
+* install a packages with `install.packages()` [comprehension]
+
+* load a package with `library()` or `require()` [comprehension]
+
+* determine which packages are out of date [application]
+
+* understand lifetime of `install.packages`/`library` effects [comprehension]
+
+* use `::` to refer to a function in a specific package 
+
+#http://swirlstats.com/swirlify/quickstart.html
+
